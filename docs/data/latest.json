@@ -1,73 +1,73 @@
 {
   "date": "2026-07-02",
   "weekday": "周四",
-  "generated_at": "2026-07-02T16:41:24.421033+08:00",
+  "generated_at": "2026-07-02T17:10:53.511174+08:00",
   "is_weekend_recap": false,
   "market_data": {
     "crypto": [
       {
         "symbol": "ZEC",
         "name": "Zcash",
-        "price": 421.85,
-        "change_24h_pct": 5.81,
-        "volume_24h": 362001529,
-        "market_cap": 7083188347
+        "price": 421.26,
+        "change_24h_pct": 4.99,
+        "volume_24h": 363370953,
+        "market_cap": 7074891169
       },
       {
         "symbol": "SOL",
         "name": "Solana",
-        "price": 78.25,
-        "change_24h_pct": 4.95,
-        "volume_24h": 3371550548,
-        "market_cap": 45449194626
+        "price": 78.28,
+        "change_24h_pct": 4.11,
+        "volume_24h": 3345057128,
+        "market_cap": 45479557259
       },
       {
         "symbol": "LINK",
         "name": "Chainlink",
         "price": 7.48,
-        "change_24h_pct": 4.13,
-        "volume_24h": 220795362,
-        "market_cap": 5592199482
-      },
-      {
-        "symbol": "ETH",
-        "name": "Ethereum",
-        "price": 1621.82,
-        "change_24h_pct": 3.12,
-        "volume_24h": 11445705880,
-        "market_cap": 195732502277
-      },
-      {
-        "symbol": "BTC",
-        "name": "Bitcoin",
-        "price": 60385,
-        "change_24h_pct": 2.97,
-        "volume_24h": 40752888203,
-        "market_cap": 1210779299920
+        "change_24h_pct": 3.27,
+        "volume_24h": 219913334,
+        "market_cap": 5597475434
       },
       {
         "symbol": "UNI",
         "name": "Uniswap",
         "price": 2.84,
-        "change_24h_pct": 2.95,
-        "volume_24h": 171592131,
-        "market_cap": 1761473551
+        "change_24h_pct": 2.78,
+        "volume_24h": 168070666,
+        "market_cap": 1763076308
       },
       {
-        "symbol": "BNB",
-        "name": "BNB",
-        "price": 549.97,
-        "change_24h_pct": 0.93,
-        "volume_24h": 818567462,
-        "market_cap": 74126361249
+        "symbol": "ETH",
+        "name": "Ethereum",
+        "price": 1619.55,
+        "change_24h_pct": 2.56,
+        "volume_24h": 10375601540,
+        "market_cap": 195455575632
+      },
+      {
+        "symbol": "BTC",
+        "name": "Bitcoin",
+        "price": 60331,
+        "change_24h_pct": 2.44,
+        "volume_24h": 40784155430,
+        "market_cap": 1209845962623
       },
       {
         "symbol": "HYPE",
         "name": "Hyperliquid",
-        "price": 63.11,
-        "change_24h_pct": -0.7,
-        "volume_24h": 561407629,
-        "market_cap": 14037987686
+        "price": 63.51,
+        "change_24h_pct": -0.69,
+        "volume_24h": 556723250,
+        "market_cap": 14130684999
+      },
+      {
+        "symbol": "BNB",
+        "name": "BNB",
+        "price": 549.7,
+        "change_24h_pct": 0.61,
+        "volume_24h": 811035590,
+        "market_cap": 74087914119
       }
     ],
     "stocks": {
@@ -75,120 +75,15 @@
       "secondary_alerts": []
     }
   },
-  "news": [
-    {
-      "title": "Taiko fully restores cross-chain bridge just 10 days after a $1.7 million hack",
-      "url": "https://www.coindesk.com/markets/2026/07/02/taiko-s-bridge-is-back-online-after-usd1-7-million-hack-and-its-token-is-up-a-staggering-136",
-      "source": "CoinDesk",
-      "published_at": "2026-07-02T00:35:28+00:00",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Ionic Raises $400M as AI Revenue Tops Bitcoin Mining Ahead of Nasdaq Listing",
-      "url": "https://news.bitcoin.com/ionic-raises-400m-as-ai-revenue-tops-bitcoin-mining-ahead-of-nasdaq-listing/",
-      "source": "Bitcoin.com",
-      "published_at": "2026-07-02T00:30:49+00:00",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "OpenAI weighs 5% US government stake amid Trump talks: FT",
-      "url": "https://cointelegraph.com/news/openai-5-percent-stake-us-government-trump-talks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "source": "CoinTelegraph",
-      "published_at": "2026-07-02T00:26:02+00:00",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Theo Invests $20 Million in Fidelity’s Tokenized Fund to Expand Onchain Treasuries",
-      "url": "https://news.bitcoin.com/theo-invests-20-million-in-fidelitys-tokenized-fund-to-expand-onchain-treasuries/",
-      "source": "Bitcoin.com",
-      "published_at": "2026-07-01T22:30:26+00:00",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "XRP edges higher as whale activity rises while retail traders stay cautious",
-      "url": "https://www.coindesk.com/markets/2026/07/02/xrp-edges-higher-as-whale-activity-rises-while-retail-traders-stay-cautious",
-      "source": "CoinDesk",
-      "published_at": "2026-07-01T22:20:31+00:00",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Bitcoin's long-term holders have returned to accumulation",
-      "url": "https://www.coindesk.com/markets/2026/07/02/bitcoin-long-term-holders-have-returned-to-accumulation",
-      "source": "CoinDesk",
-      "published_at": "2026-07-01T22:17:16+00:00",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Robinhood links with dYdX Labs to launch new DEX Arcus",
-      "url": "https://cointelegraph.com/news/robinhood-links-with-dydx-labs-to-launch-new-dex-arcus?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "source": "CoinTelegraph",
-      "published_at": "2026-07-01T22:05:02+00:00",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Billionaire Crypto Investor Faces $132,000 Donation Cap as UK Bill Squeezes Overseas Funding",
-      "url": "https://news.bitcoin.com/billionaire-crypto-investor-faces-132000-donation-cap-as-uk-bill-squeezes-overseas-funding/",
-      "source": "Bitcoin.com",
-      "published_at": "2026-07-01T21:30:23+00:00",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Here’s what happened in crypto today",
-      "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "source": "CoinTelegraph",
-      "published_at": "2026-07-01T21:27:03+00:00",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "FBI Director Kash Patel caught sleeping on required disclosure of six-figure MSTR investment: Report",
-      "url": "https://www.coindesk.com/policy/2026/07/02/fbi-director-kash-patel-caught-sleeping-on-required-disclosure-of-six-figure-mstr-investment",
-      "source": "CoinDesk",
-      "published_at": "2026-07-01T21:24:18+00:00",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Ether, solana, dogecoin in the green after Warsh comments push bitcoin above $60,000",
-      "url": "https://www.coindesk.com/markets/2026/07/02/ether-solana-dogecoin-in-the-green-after-warsh-comments-push-bitcoin-above-usd60-000",
-      "source": "CoinDesk",
-      "published_at": "2026-07-01T21:22:54+00:00",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "France to strengthen response as crypto wrench attacks hit 77",
-      "url": "https://cointelegraph.com/news/french-wrench-attacks-rise-to-77-as-government-promises-more-support?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "source": "CoinTelegraph",
-      "published_at": "2026-07-01T21:22:40+00:00",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "BNB Chain Unveils AI Agent Studio With Wallets, Payments and AWS Cloud Integration",
-      "url": "https://news.bitcoin.com/bnb-chain-unveils-ai-agent-studio-with-wallets-payments-and-aws-cloud-integration/",
-      "source": "Bitcoin.com",
-      "published_at": "2026-07-01T20:30:29+00:00",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Analyst warns BTC could drop further after worst June since 2022",
-      "url": "https://cointelegraph.com/news/renowned-analyst-predicts-btc-drop-to-52k-after-worst-june-since-2022?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "source": "CoinTelegraph",
-      "published_at": "2026-07-01T19:42:24+00:00",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Venice AI becomes unicorn after $65M Series A as AI privacy concerns grow",
-      "url": "https://cointelegraph.com/news/venice-ai-becomes-a-unicorn-as-ai-privacy-concerns-grow?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "source": "CoinTelegraph",
-      "published_at": "2026-07-01T19:31:39+00:00",
-      "sentiment": "neutral"
-    }
-  ],
+  "news": [],
   "analysis": {
     "etf_summary": "ETF数据暂不可用",
     "viewpoints": [],
     "risk_alerts": [
-      "⚠️ AI分析引擎异常：Gemini API 请求失败: 404 Client Error: Not Found for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro:generateContent?key=AQ.Ab8RN6LiFbtPatgU7GgPR0vShrlQ9oKfh71ZSvvbsuKEvHOPKw，请手动查阅市场信息"
+      "⚠️ AI分析引擎异常：Gemini API 请求失败 (HTTP Unknown): 401 Client Error: Unauthorized for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro-latest:generateContent?key=AQ.Ab8RN6LiFbtPatgU7GgPR0vShrlQ9oKfh71ZSvvbsuKEvHOPKw，请手动查阅市场信息"
     ],
     "supplementary_news": [],
+    "translated_news": [],
     "grounding_sources": []
   },
   "web_url": "https://terencey2026.github.io/Crypto-morning/"
