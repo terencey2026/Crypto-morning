@@ -1,73 +1,73 @@
 {
   "date": "2026-07-02",
   "weekday": "周四",
-  "generated_at": "2026-07-02T17:29:43.000446+08:00",
+  "generated_at": "2026-07-02T17:37:26.047951+08:00",
   "is_weekend_recap": false,
   "market_data": {
     "crypto": [
       {
-        "symbol": "ZEC",
-        "name": "Zcash",
-        "price": 420.96,
-        "change_24h_pct": 4.91,
-        "volume_24h": 367708786,
-        "market_cap": 7067175926
-      },
-      {
         "symbol": "SOL",
         "name": "Solana",
-        "price": 78.55,
-        "change_24h_pct": 4.61,
-        "volume_24h": 3355145621,
-        "market_cap": 45640148017
+        "price": 79.08,
+        "change_24h_pct": 5.19,
+        "volume_24h": 3468587146,
+        "market_cap": 45920378070
+      },
+      {
+        "symbol": "ZEC",
+        "name": "Zcash",
+        "price": 421.8,
+        "change_24h_pct": 5.06,
+        "volume_24h": 369405033,
+        "market_cap": 7082545098
       },
       {
         "symbol": "LINK",
         "name": "Chainlink",
-        "price": 7.49,
-        "change_24h_pct": 3.35,
-        "volume_24h": 217316338,
-        "market_cap": 5600512125
-      },
-      {
-        "symbol": "ETH",
-        "name": "Ethereum",
-        "price": 1626.17,
-        "change_24h_pct": 3.08,
-        "volume_24h": 11465140780,
-        "market_cap": 196212926261
-      },
-      {
-        "symbol": "BTC",
-        "name": "Bitcoin",
-        "price": 60529,
-        "change_24h_pct": 2.94,
-        "volume_24h": 40957671178,
-        "market_cap": 1213532189040
+        "price": 7.52,
+        "change_24h_pct": 3.8,
+        "volume_24h": 218432924,
+        "market_cap": 5628545800
       },
       {
         "symbol": "UNI",
         "name": "Uniswap",
-        "price": 2.84,
-        "change_24h_pct": 2.83,
-        "volume_24h": 168297638,
-        "market_cap": 1764398800
+        "price": 2.87,
+        "change_24h_pct": 3.77,
+        "volume_24h": 170707575,
+        "market_cap": 1775704532
+      },
+      {
+        "symbol": "ETH",
+        "name": "Ethereum",
+        "price": 1633.31,
+        "change_24h_pct": 3.48,
+        "volume_24h": 8732705278,
+        "market_cap": 197112908579
+      },
+      {
+        "symbol": "BTC",
+        "name": "Bitcoin",
+        "price": 60678,
+        "change_24h_pct": 3.17,
+        "volume_24h": 41437546454,
+        "market_cap": 1216665693570
       },
       {
         "symbol": "BNB",
         "name": "BNB",
-        "price": 550.68,
-        "change_24h_pct": 0.88,
-        "volume_24h": 824057319,
-        "market_cap": 74197512149
+        "price": 552.96,
+        "change_24h_pct": 1.44,
+        "volume_24h": 796051618,
+        "market_cap": 74528811065
       },
       {
         "symbol": "HYPE",
         "name": "Hyperliquid",
-        "price": 63.55,
-        "change_24h_pct": -0.79,
-        "volume_24h": 556396527,
-        "market_cap": 14127845583
+        "price": 63.77,
+        "change_24h_pct": -0.6,
+        "volume_24h": 555866096,
+        "market_cap": 14184061774
       }
     ],
     "stocks": {
@@ -80,7 +80,7 @@
     "etf_summary": "ETF数据暂不可用",
     "viewpoints": [],
     "risk_alerts": [
-      "⚠️ AI分析引擎异常：Gemini API 请求失败 (HTTP Unknown): 401 Client Error: Unauthorized for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro-latest:generateContent?key=AQ.Ab8RN6LiFbtPatgU7GgPR0vShrlQ9oKfh71ZSvvbsuKEvHOPKw，请手动查阅市场信息"
+      "⚠️ AI分析引擎异常：Gemini API 请求失败 (HTTP Unknown): 404 Client Error: Not Found for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro-latest:generateContent?key=AIzaSyDZdyFVmVP-3mKH94KPhz6PT69c7z3UYPs，请手动查阅市场信息"
     ],
     "supplementary_news": [],
     "translated_news": [],
