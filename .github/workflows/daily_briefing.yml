@@ -1,0 +1,46 @@
+name: Daily Crypto Briefing
+
+on:
+  schedule:
+    # 23:20 UTC = 07:20 AM Beijing Time (UTC+8)
+    # Set 10 min early to account for GitHub Actions startup delay (~3-5 min)
+    - cron: '20 23 * * *'
+  workflow_dispatch:  # Allow manual trigger from GitHub UI
+
+permissions:
+  contents: write  # Needed to commit data files back to repo for GitHub Pages
+
+jobs:
+  generate-briefing:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10  # Safety timeout
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run briefing pipeline
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
+          WEB_URL: "https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/"
+          TZ: Asia/Shanghai
+        run: python scripts/main.py
+
+      - name: Commit and push updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/data/
+          # Only commit if there are changes (avoid empty commits)
+          git diff --staged --quiet || git commit -m "📊 Daily briefing $(TZ=Asia/Shanghai date +%Y-%m-%d)"
+          git push
