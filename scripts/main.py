@@ -112,7 +112,7 @@ def main() -> int:
             "crypto": crypto_data,
             "stocks": stock_data,
         },
-        "news": news_data,
+        "news": analysis.get("translated_news", []),
         "analysis": analysis,
         "web_url": os.environ.get("WEB_URL", ""),
     }
@@ -142,7 +142,7 @@ def main() -> int:
     logger.info(f"  Date      : {briefing['date']} ({briefing['weekday']})")
     logger.info(f"  Crypto    : {len(crypto_data)} tokens fetched")
     logger.info(f"  Stocks    : {len(stock_data.get('primary', []))} primary")
-    logger.info(f"  News      : {len(news_data)} items")
+    logger.info(f"  News      : {len(briefing['news'])} translated items")
     logger.info(f"  Viewpoints: {len(analysis.get('viewpoints', []))}")
     logger.info(f"  Feishu    : {'✓ sent' if feishu_ok else '✗ failed'}")
     logger.info(f"  Web       : {web_path}")
