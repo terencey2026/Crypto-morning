@@ -8,9 +8,9 @@ Edit this file to customize your briefing content.
 import os
 
 # ── API Keys (set via environment variables / GitHub Secrets) ─────────────
-GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
-CRYPTOPANIC_API_KEY = os.environ.get("CRYPTOPANIC_API_KEY", "")
-FEISHU_WEBHOOK_URL = os.environ.get("FEISHU_WEBHOOK_URL", "")
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "").strip()
+CRYPTOPANIC_API_KEY = os.environ.get("CRYPTOPANIC_API_KEY", "").strip()
+FEISHU_WEBHOOK_URL = os.environ.get("FEISHU_WEBHOOK_URL", "").strip()
 
 # ── Crypto Watchlist (CoinGecko IDs) ─────────────────────────────────────
 # Find IDs at: https://www.coingecko.com/
