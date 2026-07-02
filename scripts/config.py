@@ -63,7 +63,7 @@ STOCK_WATCHLIST = {
 SECONDARY_STOCK_THRESHOLD_PCT = 5.0
 
 # ── Gemini API Settings ──────────────────────────────────────────────────
-GEMINI_MODEL = "gemini-1.5-pro"
+GEMINI_MODEL = "gemini-1.5-pro-latest"
 GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
 
 # ── 3. RSS Feeds (News) ──────────────────────────────────────────────────
