@@ -1,0 +1,179 @@
+{
+  "date": "2026-07-02",
+  "weekday": "周四",
+  "generated_at": "2026-07-02T07:30:00+08:00",
+  "is_weekend_recap": false,
+  "market_data": {
+    "crypto": [
+      {
+        "symbol": "BTC",
+        "name": "Bitcoin",
+        "price": 64230.50,
+        "change_24h_pct": 2.3,
+        "volume_24h": 28500000000,
+        "market_cap": 1260000000000
+      },
+      {
+        "symbol": "ETH",
+        "name": "Ethereum",
+        "price": 3456.78,
+        "change_24h_pct": -1.2,
+        "volume_24h": 15200000000,
+        "market_cap": 415000000000
+      },
+      {
+        "symbol": "SOL",
+        "name": "Solana",
+        "price": 142.35,
+        "change_24h_pct": 5.7,
+        "volume_24h": 3200000000,
+        "market_cap": 62000000000
+      },
+      {
+        "symbol": "BNB",
+        "name": "BNB",
+        "price": 598.20,
+        "change_24h_pct": 0.8,
+        "volume_24h": 1800000000,
+        "market_cap": 89000000000
+      }
+    ],
+    "stocks": {
+      "primary": [
+        {
+          "ticker": "COIN",
+          "name": "Coinbase",
+          "price": 235.00,
+          "change_pct": 1.8,
+          "volume": 12500000,
+          "group": "业务类"
+        },
+        {
+          "ticker": "MSTR",
+          "name": "MicroStrategy",
+          "price": 1425.30,
+          "change_pct": 3.2,
+          "volume": 8900000,
+          "group": "业务类"
+        },
+        {
+          "ticker": "MARA",
+          "name": "Marathon Digital",
+          "price": 22.45,
+          "change_pct": -2.1,
+          "volume": 15600000,
+          "group": "矿股"
+        },
+        {
+          "ticker": "RIOT",
+          "name": "Riot Platforms",
+          "price": 12.80,
+          "change_pct": -1.5,
+          "volume": 9800000,
+          "group": "矿股"
+        },
+        {
+          "ticker": "IBIT",
+          "name": "iShares Bitcoin ETF",
+          "price": 38.50,
+          "change_pct": 2.1,
+          "volume": 32000000,
+          "group": "DAT类"
+        }
+      ],
+      "secondary_alerts": [
+        {
+          "ticker": "WULF",
+          "name": "TeraWulf",
+          "price": 5.20,
+          "change_pct": 12.3,
+          "volume": 8500000,
+          "group": "矿股"
+        },
+        {
+          "ticker": "CIFR",
+          "name": "Cipher Mining",
+          "price": 4.85,
+          "change_pct": -8.7,
+          "volume": 6200000,
+          "group": "矿股"
+        }
+      ]
+    }
+  },
+  "news": [
+    {
+      "title": "SEC approves new crypto ETF applications from major asset managers",
+      "url": "https://example.com/1",
+      "source": "CoinDesk",
+      "published_at": "2026-07-01T22:30:00Z",
+      "sentiment": "positive"
+    },
+    {
+      "title": "美联储官员暗示可能在9月前维持利率不变",
+      "url": "https://example.com/2",
+      "source": "Bloomberg",
+      "published_at": "2026-07-01T20:15:00Z",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "某交易所遭遇安全漏洞，约2000万美元资产受影响",
+      "url": "https://example.com/3",
+      "source": "The Block",
+      "published_at": "2026-07-01T18:45:00Z",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Solana生态TVL创历史新高，突破120亿美元",
+      "url": "https://example.com/4",
+      "source": "DeFi Llama",
+      "published_at": "2026-07-01T16:00:00Z",
+      "sentiment": "positive"
+    }
+  ],
+  "analysis": {
+    "etf_summary": "BTC现货ETF昨日净流入1.25亿美元，连续第5日净流入。IBIT领跑，单日流入8700万美元。GBTC持续小幅流出约1200万美元。ETH现货ETF整体净流入3400万美元。",
+    "viewpoints": [
+      {
+        "title": "看多BTC短期突破7万",
+        "direction": "bullish",
+        "view": "BTC有望在ETF持续净流入推动下突破70000美元，目前处于关键阻力位附近，一旦放量突破将打开上行空间。",
+        "logic": "1. ETF连续5日净流入累计超8亿\n2. 交易所BTC存量持续下降至历史低位\n3. 美元指数走弱利好风险资产\n4. 链上数据显示长期持有者未大量抛售",
+        "targets": "BTC / IBIT / MSTR"
+      },
+      {
+        "title": "Solana生态关注DeFi龙头",
+        "direction": "bullish",
+        "view": "Solana生态TVL突破新高，链上活跃度和手续费收入均呈上升趋势，生态内龙头项目值得关注。",
+        "logic": "1. SOL价格突破关键均线\n2. TVL创历史新高说明资金在持续流入\n3. 多个新项目即将上线带来催化",
+        "targets": "SOL / RAY / JTO"
+      },
+      {
+        "title": "警惕ETH短期回调风险",
+        "direction": "bearish",
+        "view": "ETH近期涨幅已较大，短期存在技术性回调压力，建议谨慎追高。",
+        "logic": "1. RSI进入超买区域\n2. 期货资金费率偏高\n3. 大额转入交易所地址增多",
+        "targets": "ETH / ETHE"
+      }
+    ],
+    "risk_alerts": [
+      "美联储7月议息会议临近，市场波动率可能上升",
+      "某交易所安全事件可能引发短期恐慌情绪",
+      "BTC合约持仓量处于历史高位，注意爆仓风险"
+    ],
+    "supplementary_news": [
+      {
+        "title": "香港虚拟资产新规细则公布",
+        "summary": "香港证监会发布虚拟资产交易平台监管细则修订版，进一步明确合规要求和投资者保护措施。",
+        "source": "南华早报",
+        "url": "https://example.com/5"
+      },
+      {
+        "title": "Tether增发5亿USDT",
+        "summary": "Tether在Tron网络新增发5亿USDT，总供应量突破1200亿美元。CTO表示为库存补充，非市场需求驱动。",
+        "source": "Whale Alert",
+        "url": "https://example.com/6"
+      }
+    ]
+  }
+}

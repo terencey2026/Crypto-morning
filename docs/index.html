@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="加密货币每日晨报 — 行情速览、概念股追踪、ETF资金流向、核心观点与风险提示，助您高效把握市场脉搏。">
+  <meta name="keywords" content="加密货币,晨报,比特币,以太坊,行情,ETF,概念股,区块链">
+  <meta name="author" content="Crypto Morning Briefing">
+  <meta name="theme-color" content="#0a0e1a">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="加密货币晨报 — Crypto Morning Briefing">
+  <meta property="og:description" content="每日加密货币市场速览、核心观点与风险提示">
+  <meta property="og:type" content="website">
+
+  <title>加密货币晨报 — Crypto Morning Briefing</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Background gradient overlay -->
+  <div class="bg-gradient" aria-hidden="true"></div>
+
+  <!-- Loading Spinner -->
+  <div id="loading-screen" class="loading-screen" role="status" aria-label="加载中">
+    <div class="spinner">
+      <div class="spinner-ring"></div>
+      <div class="spinner-ring"></div>
+      <div class="spinner-ring"></div>
+    </div>
+    <p class="loading-text">正在加载晨报数据…</p>
+  </div>
+
+  <!-- Error State -->
+  <div id="error-screen" class="error-screen hidden" role="alert">
+    <div class="error-icon">
+      <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10"/>
+        <path d="M12 8v4M12 16h.01"/>
+      </svg>
+    </div>
+    <h2 class="error-title" id="error-title">该日期暂无晨报数据</h2>
+    <p class="error-message" id="error-message">请选择其他日期查看</p>
+    <button class="btn-retry" id="btn-retry" onclick="window.CryptoBriefing.loadLatest()">返回最新晨报</button>
+  </div>
+
+  <!-- Main App -->
+  <div id="app" class="app hidden">
+    <!-- Sticky Header -->
+    <header class="header" id="header">
+      <div class="header-inner">
+        <div class="header-top">
+          <div class="brand">
+            <h1 class="brand-title">
+              <span class="brand-icon" aria-hidden="true">◆</span>
+              加密晨报
+            </h1>
+          </div>
+          <button class="btn-refresh" id="btn-refresh" aria-label="刷新数据" title="刷新数据">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="23 4 23 10 17 10"/>
+              <polyline points="1 20 1 14 7 14"/>
+              <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/>
+            </svg>
+          </button>
+        </div>
+
+        <div class="date-nav">
+          <button class="nav-btn" id="btn-prev" aria-label="前一天">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="15 18 9 12 15 6"/>
+            </svg>
+          </button>
+
+          <div class="date-display" id="date-display">
+            <span class="date-text" id="date-text">—</span>
+            <span class="weekday-badge" id="weekday-badge">—</span>
+            <input type="date" class="date-picker" id="date-picker" aria-label="选择日期">
+          </div>
+
+          <button class="nav-btn" id="btn-next" aria-label="后一天">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"/>
+            </svg>
+          </button>
+        </div>
+
+        <div class="update-time" id="update-time"></div>
+      </div>
+    </header>
+
+    <!-- Content Sections -->
+    <main class="main" id="main-content">
+
+      <!-- Section 1: Crypto Prices -->
+      <section class="section section-animate" id="section-crypto" aria-labelledby="crypto-heading">
+        <h2 class="section-heading" id="crypto-heading">
+          <span class="heading-icon" aria-hidden="true">₿</span>
+          加密货币行情
+        </h2>
+        <div class="crypto-grid" id="crypto-grid"></div>
+      </section>
+
+      <!-- Section 2: Primary Stocks -->
+      <section class="section section-animate" id="section-stocks" aria-labelledby="stocks-heading">
+        <h2 class="section-heading" id="stocks-heading">
+          <span class="heading-icon" aria-hidden="true">📊</span>
+          概念股行情
+        </h2>
+        <div id="stocks-container"></div>
+      </section>
+
+      <!-- Section 3: Secondary Alerts -->
+      <section class="section section-animate hidden" id="section-alerts" aria-labelledby="alerts-heading">
+        <h2 class="section-heading" id="alerts-heading">
+          <span class="heading-icon" aria-hidden="true">⚡</span>
+          次要标的异动
+        </h2>
+        <div id="alerts-container"></div>
+      </section>
+
+      <!-- Section 4: ETF Summary -->
+      <section class="section section-animate" id="section-etf" aria-labelledby="etf-heading">
+        <h2 class="section-heading" id="etf-heading">
+          <span class="heading-icon" aria-hidden="true">📈</span>
+          ETF 概况
+        </h2>
+        <div class="card card-etf" id="etf-card"></div>
+      </section>
+
+      <!-- Section 5: Overnight News -->
+      <section class="section section-animate" id="section-news" aria-labelledby="news-heading">
+        <h2 class="section-heading" id="news-heading">
+          <span class="heading-icon" aria-hidden="true">📰</span>
+          隔夜重大事件
+        </h2>
+        <div id="news-container"></div>
+      </section>
+
+      <!-- Section 6: Core Viewpoints (MOST IMPORTANT) -->
+      <section class="section section-animate section-highlight" id="section-viewpoints" aria-labelledby="viewpoints-heading">
+        <h2 class="section-heading heading-primary" id="viewpoints-heading">
+          <span class="heading-icon" aria-hidden="true">🎯</span>
+          核心观点
+        </h2>
+        <div id="viewpoints-container"></div>
+      </section>
+
+      <!-- Section 7: Risk Alerts -->
+      <section class="section section-animate" id="section-risk" aria-labelledby="risk-heading">
+        <h2 class="section-heading heading-warning" id="risk-heading">
+          <span class="heading-icon" aria-hidden="true">⚠️</span>
+          风险提示
+        </h2>
+        <div class="card card-risk" id="risk-card"></div>
+      </section>
+
+      <!-- Section 8: Supplementary News -->
+      <section class="section section-animate hidden" id="section-supplementary" aria-labelledby="supplementary-heading">
+        <h2 class="section-heading" id="supplementary-heading">
+          <span class="heading-icon" aria-hidden="true">📋</span>
+          补充新闻
+        </h2>
+        <div id="supplementary-container"></div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+      <div class="footer-inner">
+        <p class="footer-sources">数据来源：CoinGecko · Yahoo Finance · CoinDesk · Bloomberg</p>
+        <p class="footer-history" id="footer-history"></p>
+        <p class="footer-brand">Crypto Morning Briefing ◆</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
