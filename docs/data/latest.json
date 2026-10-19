@@ -1,73 +1,73 @@
 {
-  "date": "2026-10-18",
-  "weekday": "周日",
-  "generated_at": "2026-10-18T09:02:33.154106+08:00",
-  "is_weekend_recap": false,
+  "date": "2026-10-19",
+  "weekday": "周一",
+  "generated_at": "2026-10-19T09:16:54.431001+08:00",
+  "is_weekend_recap": true,
   "market_data": {
     "crypto": [
       {
-        "symbol": "LINK",
-        "name": "Chainlink",
-        "price": 11.97,
-        "change_24h_pct": -2.74,
-        "volume_24h": 220513794,
-        "market_cap": 9178454498
-      },
-      {
-        "symbol": "HYPE",
-        "name": "Hyperliquid",
-        "price": 78.27,
-        "change_24h_pct": -2.23,
-        "volume_24h": 437208597,
-        "market_cap": 17411211009
-      },
-      {
         "symbol": "ZEC",
         "name": "Zcash",
-        "price": 1123.06,
-        "change_24h_pct": -2.2,
-        "volume_24h": 650806693,
-        "market_cap": 19081651094
+        "price": 1154.97,
+        "change_24h_pct": 1.87,
+        "volume_24h": 826582014,
+        "market_cap": 19619473717
       },
       {
-        "symbol": "UNI",
-        "name": "Uniswap",
-        "price": 7.18,
-        "change_24h_pct": -1.63,
-        "volume_24h": 266085503,
-        "market_cap": 4486177329
-      },
-      {
-        "symbol": "SOL",
-        "name": "Solana",
-        "price": 103.33,
-        "change_24h_pct": -0.96,
-        "volume_24h": 1756906006,
-        "market_cap": 60900229161
-      },
-      {
-        "symbol": "ETH",
-        "name": "Ethereum",
-        "price": 2403.37,
-        "change_24h_pct": -0.75,
-        "volume_24h": 6485309486,
-        "market_cap": 293553547456
-      },
-      {
-        "symbol": "BNB",
-        "name": "BNB",
-        "price": 717.56,
-        "change_24h_pct": -0.26,
-        "volume_24h": 520064021,
-        "market_cap": 95548784878
+        "symbol": "LINK",
+        "name": "Chainlink",
+        "price": 12.12,
+        "change_24h_pct": 1.15,
+        "volume_24h": 272713662,
+        "market_cap": 9294447866
       },
       {
         "symbol": "BTC",
         "name": "Bitcoin",
-        "price": 81464,
-        "change_24h_pct": -0.02,
-        "volume_24h": 14196732994,
-        "market_cap": 1637327256765
+        "price": 82403,
+        "change_24h_pct": 1.06,
+        "volume_24h": 21329737161,
+        "market_cap": 1656003010688
+      },
+      {
+        "symbol": "SOL",
+        "name": "Solana",
+        "price": 104.61,
+        "change_24h_pct": 0.99,
+        "volume_24h": 2378683270,
+        "market_cap": 61644858075
+      },
+      {
+        "symbol": "BNB",
+        "name": "BNB",
+        "price": 724.78,
+        "change_24h_pct": 0.9,
+        "volume_24h": 604234161,
+        "market_cap": 96500402338
+      },
+      {
+        "symbol": "ETH",
+        "name": "Ethereum",
+        "price": 2419.06,
+        "change_24h_pct": 0.52,
+        "volume_24h": 8738579206,
+        "market_cap": 295441868624
+      },
+      {
+        "symbol": "HYPE",
+        "name": "Hyperliquid",
+        "price": 79.19,
+        "change_24h_pct": 0.48,
+        "volume_24h": 549592485,
+        "market_cap": 17608418136
+      },
+      {
+        "symbol": "UNI",
+        "name": "Uniswap",
+        "price": 7.24,
+        "change_24h_pct": 0.24,
+        "volume_24h": 340784213,
+        "market_cap": 4519498868
       }
     ],
     "stocks": {
