@@ -1,0 +1,90 @@
+{
+  "date": "2026-11-04",
+  "weekday": "周三",
+  "generated_at": "2026-11-04T11:00:17.882535+08:00",
+  "is_weekend_recap": false,
+  "market_data": {
+    "crypto": [
+      {
+        "symbol": "ZEC",
+        "name": "Zcash",
+        "price": 1175.74,
+        "change_24h_pct": 3.85,
+        "volume_24h": 863786536,
+        "market_cap": 20013900222
+      },
+      {
+        "symbol": "UNI",
+        "name": "Uniswap",
+        "price": 7.03,
+        "change_24h_pct": 3.2,
+        "volume_24h": 436762556,
+        "market_cap": 4266850117
+      },
+      {
+        "symbol": "LINK",
+        "name": "Chainlink",
+        "price": 10.75,
+        "change_24h_pct": -2.58,
+        "volume_24h": 261566315,
+        "market_cap": 8242816568
+      },
+      {
+        "symbol": "HYPE",
+        "name": "Hyperliquid",
+        "price": 81.8,
+        "change_24h_pct": -1.35,
+        "volume_24h": 1206054404,
+        "market_cap": 19584321293
+      },
+      {
+        "symbol": "BNB",
+        "name": "BNB",
+        "price": 687.77,
+        "change_24h_pct": -0.99,
+        "volume_24h": 757916769,
+        "market_cap": 90449957796
+      },
+      {
+        "symbol": "SOL",
+        "name": "Solana",
+        "price": 91.17,
+        "change_24h_pct": -0.46,
+        "volume_24h": 2202094899,
+        "market_cap": 53815496878
+      },
+      {
+        "symbol": "BTC",
+        "name": "Bitcoin",
+        "price": 76402,
+        "change_24h_pct": -0.24,
+        "volume_24h": 25471868786,
+        "market_cap": 1536097360725
+      },
+      {
+        "symbol": "ETH",
+        "name": "Ethereum",
+        "price": 2248.97,
+        "change_24h_pct": 0.01,
+        "volume_24h": 8624789107,
+        "market_cap": 274800005764
+      }
+    ],
+    "stocks": {
+      "primary": [],
+      "secondary_alerts": []
+    }
+  },
+  "news": [],
+  "analysis": {
+    "etf_summary": "ETF数据暂不可用",
+    "viewpoints": [],
+    "risk_alerts": [
+      "⚠️ AI分析引擎异常：Gemini API 请求失败 (HTTP Unknown): 400 Client Error: Bad Request for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro-latest:generateContent?key=AIzaSyDZdyFVmVP-3mKH94KPhz6PT69c7z3UYPs，请手动查阅市场信息"
+    ],
+    "supplementary_news": [],
+    "translated_news": [],
+    "grounding_sources": []
+  },
+  "web_url": "https://terencey2026.github.io/Crypto-morning/"
+}
